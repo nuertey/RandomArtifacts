@@ -1,0 +1,119 @@
+HelloTSLSocket, HTTPS example of TLSSocket
+Connecting to network
+Synchronizing time
+Time set.
+[INFO][TLSW]: mbedtls_ssl_config_defaults()
+[INFO][TLSW]: mbedtls_ssl_conf_ca_chain()
+[INFO][TLSW]: mbedtls_ssl_conf_rng()
+[INFO][TLSW]: mbedtls_ssl_conf_authmode()
+[INFO][TLSW]: mbedtls_ssl_setup()
+[INFO][TLSW]: Starting TLS handshake with os.mbed.com
+[DBG ][TLSW]: ssl_tls.c:8021: |2| => handshake
+
+[DBG ][TLSW]: ssl_cli.c:3405: |2| client state: 0
+
+[DBG ][TLSW]: ssl_tls.c:2751: |2| => flush output
+
+[DBG ][TLSW]: ssl_tls.c:2763: |2| <= flush output
+
+[DBG ][TLSW]: ssl_cli.c:3405: |2| client state: 1
+
+[DBG ][TLSW]: ssl_tls.c:2751: |2| => flush output
+
+[DBG ][TLSW]: ssl_tls.c:2763: |2| <= flush output
+
+[DBG ][TLSW]: ssl_cli.c:0774: |2| => write client hello
+
+[DBG ][TLSW]: ssl_tls.c:3180: |2| => write handshake message
+
+[DBG ][TLSW]: ssl_tls.c:3337: |2| => write record
+
+[DBG ][TLSW]: ssl_tls.c:2751: |2| => flush output
+
+[DBG ][TLSW]: ssl_tls.c:2770: |2| message length: 194, out_left: 194
+
+[DBG ][TLSW]: ssl_tls.c:2775: |2| ssl->f_send() returned 194 (-0xffffff3e)
+
+[DBG ][TLSW]: ssl_tls.c:2803: |2| <= flush output
+
+[DBG ][TLSW]: ssl_tls.c:3470: |2| <= write record
+
+[DBG ][TLSW]: ssl_tls.c:3314: |2| <= write handshake message
+
+[DBG ][TLSW]: ssl_cli.c:1106: |2| <= write client hello
+
+[DBG ][TLSW]: ssl_cli.c:3405: |2| client state: 2
+
+[DBG ][TLSW]: ssl_tls.c:2751: |2| => flush output
+
+[DBG ][TLSW]: ssl_tls.c:2763: |2| <= flush output
+
+[DBG ][TLSW]: ssl_cli.c:1499: |2| => parse server hello
+
+[DBG ][TLSW]: ssl_tls.c:4305: |2| => read record
+
+[DBG ][TLSW]: ssl_tls.c:2532: |2| => fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2693: |2| in_left: 0, nb_want: 5
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 0, nb_want: 5
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+[DBG ][TLSW]: ssl_tls.c:2738: |2| <= fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2532: |2| => fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2693: |2| in_left: 5, nb_want: 94
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 5, nb_want: 94
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 89 (-0xffffffa7)
+
+[DBG ][TLSW]: ssl_tls.c:2738: |2| <= fetch input
+
+[DBG ][TLSW]: ssl_tls.c:4379: |2| <= read record
+
+[DBG ][TLSW]: ssl_cli.c:1781: |2| server hello, total extension length: 13
+
+[DBG ][TLSW]: ssl_cli.c:1970: |2| <= parse server hello
+
+[DBG ][TLSW]: ssl_cli.c:3405: |2| client state: 3
+
+[DBG ][TLSW]: ssl_tls.c:2751: |2| => flush output
+
+[DBG ][TLSW]: ssl_tls.c:2763: |2| <= flush output
+
+[DBG ][TLSW]: ssl_tls.c:5440: |2| => parse certificate
+
+[DBG ][TLSW]: ssl_tls.c:4305: |2| => read record
+
+[DBG ][TLSW]: ssl_tls.c:2532: |2| => fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2693: |2| in_left: 0, nb_want: 5
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 0, nb_want: 5
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+[DBG ][TLSW]: ssl_tls.c:2738: |2| <= fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2532: |2| => fetch input
+
+[DBG ][TLSW]: ssl_tls.c:2693: |2| in_left: 5, nb_want: 4587
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 5, nb_want: 4587
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 437 (-0xfffffe4b)
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 442, nb_want: 4587
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 536 (-0xfffffde8)
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 978, nb_want: 4587
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 536 (-0xfffffde8)
+
+[DBG ][TLSW]: ssl_tls.c:2717: |2| in_left: 1514, nb_want: 4587
+
+[DBG ][TLSW]: ssl_tls.c:2718: |2| ssl->f_recv(_timeout)() returned 536 (-0xfffffde8)
