@@ -1,0 +1,108 @@
+=========================================================
+GCC ARM-NONE-EABI
+
+KEIL µVISION - HOW TO CHANGE DEFAULT ARM COMPILER VERSION
+=========================================================
+1)  Using http://www.keil.com/support/docs/3127.htm as a reference source, download the GCC arm-none-eabi embedded toolchain from:
+
+ https://developer.arm.com/open-source/gnu-toolchain/gnu-rm
+
+For my tests, the version downloaded was 9 2020-q2-update.
+
+2) Install the GCC arm-none-eabi embedded toolchain in your Windows environment. After installation, the relevant files should be located at:
+
+C:\Program Files (x86)\GNU Arm Embedded Toolchain\9 2020-q2-update 
+
+To check if your installation is successful, open a Windows PowerShell or command prompt and issue these commands from the indicated locations:
+
+C:\>cd progra~2
+
+C:\PROGRA~2>cd "GNU Arm Embedded Toolchain"
+
+C:\PROGRA~2\GNU Arm Embedded Toolchain>cd "9 2020-q2-update"
+
+C:\PROGRA~2\GNU Arm Embedded Toolchain\9 2020-q2-update>cd bin
+
+C:\PROGRA~2\GNU Arm Embedded Toolchain\9 2020-q2-update\bin>arm-none-eabi-g++.exe -print-sysroot
+
+C:\PROGRA~2\GNU Arm Embedded Toolchain\9 2020-q2-update\bin>arm-none-eabi-g++.exe -print-search-dirs
+
+If the outputs look good and ssane, you know your installation of the GCC arm-none-eabi toolchain was successful. You can standard lib and include files as below:
+
+C:\PROGRA~2\GNU Arm Embedded Toolchain\9 2020-q2-update\arm-none-eabi>dir
+ Volume in drive C is OS
+ Volume Serial Number is B6D7-F79C
+
+ Directory of C:\PROGRA~2\GNU Arm Embedded Toolchain\9 2020-q2-update\arm-none-eabi
+
+07/17/2020  05:54 PM    <DIR>          .
+07/17/2020  05:54 PM    <DIR>          ..
+07/17/2020  05:54 PM    <DIR>          bin
+07/17/2020  05:54 PM    <DIR>          include
+07/17/2020  05:54 PM    <DIR>          lib
+07/17/2020  05:54 PM    <DIR>          share
+
+3) Start up Keil by double-clicking the Flight Computer µVision5 project file and using http://www.keil.com/support/man/docs/uv4/uv4_gnucomp.htm as a reference source, change the compiler to GCC arm-none-eabi embedded toolchain.  Invoke that option from the dialog Project -> Manage -> Project Items -> Folders/Extensions. Enable Use GCC Compiler (GNU) for Arm projects and ensure that the prefix is arm-none-eabi- . Also, set the folder to and by locating where the toolchain was installed, for example:
+
+C:\Program Files (x86)\GNU Arm Embedded Toolchain\9 2020-q2-update 
+
+Note: It is important that you change the compiler first before attempting to change any other settings as you WILL lose ALL settings (including Group source file exclusions) for Target(s) and Group(s) when you change the compiler. 
+
+Note: It is also important that you change the compiler via the project-wide dialog Project -> Manage -> Project Items -> Folders/Extensions instead of per Target right-click dialog Manage Project Items -> Folders/Extensions. Otherwise you WILL lose ALL settings (including Group source file exclusions) for Target(s) and Group(s) when you change the compiler per target. Knowledge is indeed hindsight for, not knowing this beforehand, I lost a day having to recreate all my target configurations and Group source file exclusions, twice. Now I know. :)
+
+4) Choose Ok, and exclude source files as appropriate to your build Target by following the normal procedures.
+
+5) Replace existing startup assembly file in Group MDK-ARM to:
+
+ ..\base\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\gcc\startup_stm32h743xx.s 
+
+Ensure to designate the type as Assembly language file and include in Target build.
+
+6) For each build Target (L1, L2, Application), set up Compiler, Assembler, Linker, Debugger options by invoking Project -> Options For Target "...". Here are some of the relevant settings that I used for my test:
+
+Output:
+Click on Select Folder For Objects and select the appropriate folder within which build objects should be generated for your currently active target. Type in the particular Name Of Executable. Example, fcBootloaderL1. Select Create Executable and check Debug Information and Create HEX File.
+
+Listing:
+Check Linker Listing, Memory Map and Cross Reference.
+
+Cross Compiler (CC):
+  Include Paths:
+../base/Inc;../base/module-halSTM32H7/Inc;../base/module-halSTM32H7/Inc/Legacy;../base/Drivers/CMSIS/Device/ST/STM32H7xx/Include;../base/Drivers/CMSIS/Include;../base/module-freertos/include;../base/module-freertos/portable/GCC/ARM_CM4F;../base/module-cli;../base/module-periphinterfaces;../base/module-csp/include;../base/module-timesync;../base/module-requestReplyBase;../base/module-config;../base/Src;../base/module-filesystem;../base/module-framCY15B104Q;../base/module-telemetry;..\base\module-tmp100;..\base\module-reactionWheelClient;../base/module-hdlcFraming;..\base\module-supervisor;../base/module-patternFinder;../base/module-firmwareUpdate;../base/module-filesystem/ftransfer;../base/module-CSP/include;../lib/param/include;../lib/param/include/param;../lib/param/include/vmem;../lib/param/lib;../lib/slash/include 
+
+  Misc. Controls:
+-mfpu=fpv5-d16 -mfloat-abi=hard -fno-exceptions -fno-non-call-exceptions -fno-rtti -fno-use-cxa-atexit -ffreestanding -fno-common -std=c++1z -fno-threadsafe-statics 
+
+Assembler:
+  Misc. Controls:
+-mfpu=fpv5-d16 -mfloat-abi=hard  
+
+Linker:
+Note: ONLY check Use Math Libraries
+
+* Do not specify TEXT, DATA, and BSS sections values so that these are done automatically for us by the toolchain.
+ 
+  Linker Script File: 
+.\STM32H743ZI.ld 
+   (You can locate it with the "..." and it is in the path .../flight-computer/src/MDK-ARM/STM32H743ZI.ld)
+
+  Misc. Controls:
+--specs=nosys.specs -mfpu=fpv5-d16 -mfloat-abi=hard 
+
+Debug:
+Set to Use ST-Link Debugger.
+
+  Settings:
+    Unit: ST-LINK/V3 
+
+  Flash Download:
+   Ordinarily you don't have to do anything here but if any of the targets does not successfully debug with the new linker script, this may be worth a try to match up to the new RAM and .bss settings.
+   
+   RAM For Algorithm:
+     Start: 0x24000000     Size: 0x00080000 (these should essentially match RAM in your .ld file I think)
+
+   * previous values were -> Start: 0x20000000     Size: 0x00008000 (DTCMRAM essentially; matched the ld file I was using then and could successfully debug with this L1 and L2 which makes sense as those targets do fit within the 128K allotted to DTCMRAM as specified by the ld fle.)
+
+Click Ok and Ok again to get out of the dialogs. 
+
+7) Build, Load and attempt to Start Debug Session.
