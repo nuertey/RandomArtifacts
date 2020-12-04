@@ -23,6 +23,7 @@ BAT-P3 behaves in hardware. Thus begings then our journey into the code
 and logic of the BCUEmulator, the Battery Emulator.  
 
 ## List of Source Files/Documentation
+```
 .
 ├── BatteryEmulator.cpp
 ├── BatteryEmulator.hpp
@@ -75,6 +76,7 @@ and logic of the BCUEmulator, the Battery Emulator.
     ├── param
     ├── slash
     └── spdlog.wrap
+```
 
 ## How To Build (And Invoke Executable) On Raspbian (Raspberry Pi OS)
 A convenience script, build_script.sh, has been provided you which you 
