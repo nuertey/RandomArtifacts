@@ -1,0 +1,995 @@
+(py38-venv) nuertey@nuertey-PC-LL850RSB:/media/nuertey/c24545b9-e61b-481b-8264-db16fd9b4ffc/home/rena/Workspace/job_search/Actalent/workspace_stryke/OutwardFacingHTTPServer/build$ make
+[ 16%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+[ 33%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[ 50%] Linking CXX static library libfmtd.a
+[ 50%] Built target fmt
+[ 66%] Building CXX object CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o
+[ 83%] Building CXX object CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o
+[100%] Linking CXX executable OutwardFacingHTTPServer
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o:(.data+0xa7b60): multiple definition of `boost::json::detail::default_resource::instance_'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:(.data+0x548a0): first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::system::error_condition::error_condition(boost::system::detail::generic_value_tag)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:46: multiple definition of `boost::json::array::empty_'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:46: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::equal(boost::json::array const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:745: multiple definition of `boost::json::array::equal(boost::json::array const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:745: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::ios_base::width(long)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:46: multiple definition of `boost::json::object::empty_'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:46: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:368: multiple definition of `boost::json::object::object(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:368: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::rehash(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:730: multiple definition of `boost::json::object::rehash(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:730: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::equal(boost::json::object const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:767: multiple definition of `boost::json::object::equal(boost::json::object const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:767: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:33: multiple definition of `boost::json::detail::string_impl::string_impl()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:33: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::assign(char const*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:177: multiple definition of `boost::json::string::assign(char const*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:177: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::reserve_impl(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:398: multiple definition of `boost::json::string::reserve_impl(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:398: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:74: multiple definition of `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:94: multiple definition of `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:94: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::detail::unchecked_array&&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:174: multiple definition of `boost::json::array::array(boost::json::detail::unchecked_array&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:174: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::detail::unchecked_object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:199: multiple definition of `boost::json::object::object(boost::json::detail::unchecked_object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:199: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::core::basic_string_view<char>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:83: multiple definition of `boost::json::string::string(boost::core::basic_string_view<char>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:83: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(char const*, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:39: multiple definition of `boost::json::string::string(char const*, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:39: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:65: multiple definition of `boost::json::string::string(boost::json::string const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:65: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:74: multiple definition of `boost::json::string::string(boost::json::string&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:251: multiple definition of `boost::json::array::array(boost::json::array const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:251: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:279: multiple definition of `boost::json::array::array(boost::json::array&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:279: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:309: multiple definition of `boost::json::object::object(boost::json::object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:309: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:334: multiple definition of `boost::json::object::object(boost::json::object const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:334: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:317: multiple definition of `boost::json::object::object(boost::json::object&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:317: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::throw_invalid_argument(char const*, boost::source_location const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:45: multiple definition of `boost::json::detail::throw_invalid_argument(char const*, boost::source_location const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:45: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::equal(boost::json::value const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:488: multiple definition of `boost::json::value::equal(boost::json::value const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:488: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:343: multiple definition of `boost::json::key_value_pair::empty_'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:522: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::~value()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:24: multiple definition of `boost::json::value::~value()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:24: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::key_value_pair::key_value_pair(boost::json::key_value_pair const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:572: multiple definition of `boost::json::key_value_pair::key_value_pair(boost::json::key_value_pair const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:572: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::destroy()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:158: multiple definition of `boost::json::array::destroy()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:158: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::reserve_impl(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:646: multiple definition of `boost::json::array::reserve_impl(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:646: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::revert_construct::destroy()':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:177: multiple definition of `boost::json::object::revert_construct::destroy()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:177: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::revert_insert::destroy()':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:187: multiple definition of `boost::json::object::revert_insert::destroy()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:187: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::find(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:621: multiple definition of `boost::json::object::find(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:621: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::throw_out_of_range(boost::source_location const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:54: multiple definition of `boost::json::detail::throw_out_of_range(boost::source_location const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:54: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::find(boost::core::basic_string_view<char>) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:635: multiple definition of `boost::json::object::find(boost::core::basic_string_view<char>) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:635: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::~value_stack()':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:302: multiple definition of `boost::json::value_stack::~value_stack()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:302: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::stack::~stack()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:18: multiple definition of `boost::json::detail::stack::~stack()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:18: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write(char const*, unsigned long, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:105: multiple definition of `boost::json::parser::write(char const*, unsigned long, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:105: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `void std::allocator_traits<std::allocator<boost::multi_index::detail::sequenced_index_node<boost::multi_index::detail::ordered_index_node<boost::multi_index::detail::null_augment_policy, boost::multi_index::detail::index_node_base<boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true>, std::allocator<boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true> > > > > > >::destroy<boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true> >(std::allocator<boost::multi_index::detail::sequenced_index_node<boost::multi_index::detail::ordered_index_node<boost::multi_index::detail::null_augment_policy, boost::multi_index::detail::index_node_base<boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true>, std::allocator<boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true> > > > > >&, boost::bimaps::relation::mutant_relation<boost::bimaps::tags::tagged<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, boost::bimaps::relation::member_at::left>, boost::bimaps::tags::tagged<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, boost::bimaps::relation::member_at::right>, mpl_::na, true>*)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:39: multiple definition of `boost::json::array::table::allocate(unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:39: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::throw_length_error(char const*, boost::source_location const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:35: multiple definition of `boost::json::detail::throw_length_error(char const*, boost::source_location const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:35: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:61: multiple definition of `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:61: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::enable_if<std::__and_<std::__not_<std::is_same<std::remove_cv<std::remove_reference<randutils::seed_seq_fe<8ul, unsigned int, 1ul> >::type>::type, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> > >, std::is_unsigned<randutils::seed_seq_fe<8ul, unsigned int, 1ul>::result_type>, std::__not_<std::is_convertible<randutils::seed_seq_fe<8ul, unsigned int, 1ul>, unsigned long> > >::value, void>::type std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed<randutils::seed_seq_fe<8ul, unsigned int, 1ul> >(randutils::seed_seq_fe<8ul, unsigned int, 1ul>&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:72: multiple definition of `boost::json::array::revert_insert::revert_insert(boost::json::value const*, unsigned long, boost::json::array&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:72: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::enable_if<std::__and_<std::__not_<std::is_same<std::remove_cv<std::remove_reference<randutils::seed_seq_fe<8ul, unsigned int, 1ul> >::type>::type, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> > >, std::is_unsigned<randutils::seed_seq_fe<8ul, unsigned int, 1ul>::result_type>, std::__not_<std::is_convertible<randutils::seed_seq_fe<8ul, unsigned int, 1ul>, unsigned long> > >::value, void>::type std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed<randutils::seed_seq_fe<8ul, unsigned int, 1ul> >(randutils::seed_seq_fe<8ul, unsigned int, 1ul>&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:72: multiple definition of `boost::json::array::revert_insert::revert_insert(boost::json::value const*, unsigned long, boost::json::array&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:72: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::revert_insert::~revert_insert()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:123: multiple definition of `boost::json::array::revert_insert::~revert_insert()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:123: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::revert_insert::~revert_insert()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:123: multiple definition of `boost::json::array::revert_insert::~revert_insert()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:123: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::detail::unchecked_array&&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:174: multiple definition of `boost::json::array::array(boost::json::detail::unchecked_array&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:174: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::~array()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:192: multiple definition of `boost::json::array::~array()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:192: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::~array()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:192: multiple definition of `boost::json::array::~array()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:192: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(unsigned long, boost::json::value const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:198: multiple definition of `boost::json::array::array(unsigned long, boost::json::value const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:198: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:51: multiple definition of `boost::json::value::value(boost::json::value const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:51: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(unsigned long, boost::json::value const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:198: multiple definition of `boost::json::array::array(unsigned long, boost::json::value const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:198: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:222: multiple definition of `boost::json::array::array(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:222: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:222: multiple definition of `boost::json::array::array(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:222: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:245: multiple definition of `boost::json::array::array(boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:245: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:245: multiple definition of `boost::json::array::array(boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:245: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:251: multiple definition of `boost::json::array::array(boost::json::array const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:251: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(boost::json::array&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:279: multiple definition of `boost::json::array::array(boost::json::array&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:279: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:315: multiple definition of `boost::json::array::array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:315: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::write_array(boost::json::value*, std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:163: multiple definition of `boost::json::value_ref::write_array(boost::json::value*, std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:163: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:315: multiple definition of `boost::json::array::array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:315: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::operator=(boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:343: multiple definition of `boost::json::array::operator=(boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:343: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::swap(boost::json::array&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:595: multiple definition of `boost::json::array::swap(boost::json::array&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:595: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::operator=(boost::json::array&&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:352: multiple definition of `boost::json::array::operator=(boost::json::array&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:352: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::operator=(std::initializer_list<boost::json::value_ref>)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:362: multiple definition of `boost::json::array::operator=(std::initializer_list<boost::json::value_ref>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:362: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::shrink_to_fit()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:377: multiple definition of `boost::json::array::shrink_to_fit()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:377: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::clear()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:421: multiple definition of `boost::json::array::clear()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:421: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::insert(boost::json::value const*, boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:435: multiple definition of `boost::json::array::insert(boost::json::value const*, boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:435: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::insert(boost::json::value const*, boost::json::value&&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:445: multiple definition of `boost::json::array::insert(boost::json::value const*, boost::json::value&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:445: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::insert(boost::json::value const*, unsigned long, boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:456: multiple definition of `boost::json::array::insert(boost::json::value const*, unsigned long, boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:456: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::insert(boost::json::value const*, std::initializer_list<boost::json::value_ref>)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:474: multiple definition of `boost::json::array::insert(boost::json::value const*, std::initializer_list<boost::json::value_ref>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:474: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::erase(boost::json::value const*)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:487: multiple definition of `boost::json::array::erase(boost::json::value const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:487: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::erase(boost::json::value const*, boost::json::value const*)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:500: multiple definition of `boost::json::array::erase(boost::json::value const*, boost::json::value const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:500: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::push_back(boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:521: multiple definition of `boost::json::array::push_back(boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:521: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::push_back(boost::json::value&&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:528: multiple definition of `boost::json::array::push_back(boost::json::value&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:528: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::pop_back()':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:535: multiple definition of `boost::json::array::pop_back()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:535: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::resize(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:544: multiple definition of `boost::json::array::resize(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:544: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::resize(unsigned long, boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:570: multiple definition of `boost::json::array::resize(unsigned long, boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:570: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::push_back(boost::json::pilfered<boost::json::value>)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:665: multiple definition of `boost::json::array::push_back(boost::json::pilfered<boost::json::value>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:665: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::insert(boost::json::value const*, boost::json::pilfered<boost::json::value>)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:698: multiple definition of `boost::json::array::insert(boost::json::value const*, boost::json::pilfered<boost::json::value>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:698: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::hash<boost::json::array>::operator()(boost::json::array const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:765: multiple definition of `std::hash<boost::json::array>::operator()(boost::json::array const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:765: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::hash<boost::json::value>::operator()(boost::json::value const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:602: multiple definition of `std::hash<boost::json::value>::operator()(boost::json::value const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:602: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::make_error_code(boost::json::error)':
+/usr/local/boost_1_81_0/boost/json/impl/error.ipp:19: multiple definition of `boost::json::make_error_code(boost::json::error)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/error.ipp:19: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::make_error_condition(boost::json::condition)':
+/usr/local/boost_1_81_0/boost/json/impl/error.ipp:136: multiple definition of `boost::json::make_error_condition(boost::json::condition)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/error.ipp:136: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::to_string(boost::json::kind)':
+/usr/local/boost_1_81_0/boost/json/impl/kind.ipp:20: multiple definition of `boost::json::to_string(boost::json::kind)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/kind.ipp:20: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator<<(std::ostream&, boost::json::kind)':
+/usr/local/boost_1_81_0/boost/json/impl/kind.ipp:37: multiple definition of `boost::json::operator<<(std::ostream&, boost::json::kind)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/kind.ipp:37: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::~monotonic_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: multiple definition of `boost::json::monotonic_resource::~monotonic_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::release()':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:100: multiple definition of `boost::json::monotonic_resource::release()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:100: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::~monotonic_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: multiple definition of `boost::json::monotonic_resource::~monotonic_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::~monotonic_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: multiple definition of `boost::json::monotonic_resource::~monotonic_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:68: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::monotonic_resource(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:74: multiple definition of `boost::json::monotonic_resource::monotonic_resource(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::monotonic_resource(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:74: multiple definition of `boost::json::monotonic_resource::monotonic_resource(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::monotonic_resource(unsigned char*, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:85: multiple definition of `boost::json::monotonic_resource::monotonic_resource(unsigned char*, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:85: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::monotonic_resource(unsigned char*, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:85: multiple definition of `boost::json::monotonic_resource::monotonic_resource(unsigned char*, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:85: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::do_allocate(unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:120: multiple definition of `boost::json::monotonic_resource::do_allocate(unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:120: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::do_deallocate(void*, unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:157: multiple definition of `boost::json::monotonic_resource::do_deallocate(void*, unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:157: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::monotonic_resource::do_is_equal(boost::container::pmr::memory_resource const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:165: multiple definition of `boost::json::monotonic_resource::do_is_equal(boost::container::pmr::memory_resource const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/monotonic_resource.ipp:165: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::throw_bad_alloc(boost::source_location const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:25: multiple definition of `boost::json::detail::throw_bad_alloc(boost::source_location const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:25: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::get_null_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/null_resource.ipp:94: multiple definition of `boost::json::get_null_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/null_resource.ipp:94: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::table::digest(boost::core::basic_string_view<char>) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:86: multiple definition of `boost::json::object::table::digest(boost::core::basic_string_view<char>) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:86: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::detail::unchecked_object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:199: multiple definition of `boost::json::object::object(boost::json::detail::unchecked_object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:199: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::~object()':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:289: multiple definition of `boost::json::object::~object()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:289: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::~object()':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:289: multiple definition of `boost::json::object::~object()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:289: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:299: multiple definition of `boost::json::object::object(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:299: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:299: multiple definition of `boost::json::object::object(unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:299: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:309: multiple definition of `boost::json::object::object(boost::json::object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:309: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:317: multiple definition of `boost::json::object::object(boost::json::object&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:317: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::swap(boost::json::object&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:572: multiple definition of `boost::json::object::swap(boost::json::object&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:572: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(boost::json::object const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:334: multiple definition of `boost::json::object::object(boost::json::object const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:334: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::object(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:368: multiple definition of `boost::json::object::object(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:368: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::insert(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:447: multiple definition of `boost::json::object::insert(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:447: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::operator=(boost::json::object const&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:394: multiple definition of `boost::json::object::operator=(boost::json::object const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:394: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::operator=(boost::json::object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:404: multiple definition of `boost::json::object::operator=(boost::json::object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:404: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::operator=(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:416: multiple definition of `boost::json::object::operator=(std::initializer_list<std::pair<boost::core::basic_string_view<char>, boost::json::value_ref> >)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:416: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::clear()':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:432: multiple definition of `boost::json::object::clear()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:432: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::make_value(boost::json::storage_ptr) const':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:82: multiple definition of `boost::json::value_ref::make_value(boost::json::storage_ptr) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:82: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::erase(boost::json::key_value_pair const*)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:510: multiple definition of `boost::json::object::erase(boost::json::key_value_pair const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:510: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::erase(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:528: multiple definition of `boost::json::object::erase(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:528: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::stable_erase(boost::json::key_value_pair const*)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:540: multiple definition of `boost::json::object::stable_erase(boost::json::key_value_pair const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:540: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::stable_erase(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:561: multiple definition of `boost::json::object::stable_erase(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:561: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::operator[](boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:601: multiple definition of `boost::json::object::operator[](boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:601: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::count(boost::core::basic_string_view<char>) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:611: multiple definition of `boost::json::object::count(boost::core::basic_string_view<char>) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:611: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::contains(boost::core::basic_string_view<char>) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:649: multiple definition of `boost::json::object::contains(boost::core::basic_string_view<char>) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:649: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::if_contains(boost::core::basic_string_view<char>) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:660: multiple definition of `boost::json::object::if_contains(boost::core::basic_string_view<char>) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:660: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::if_contains(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:671: multiple definition of `boost::json::object::if_contains(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:671: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::insert_impl(boost::json::pilfered<boost::json::key_value_pair>)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:689: multiple definition of `boost::json::object::insert_impl(boost::json::pilfered<boost::json::key_value_pair>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:689: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::object::insert_impl(boost::json::pilfered<boost::json::key_value_pair>, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:706: multiple definition of `boost::json::object::insert_impl(boost::json::pilfered<boost::json::key_value_pair>, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:706: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `std::hash<boost::json::object>::operator()(boost::json::object const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/object.ipp:903: multiple definition of `std::hash<boost::json::object>::operator()(boost::json::object const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/object.ipp:903: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(boost::core::basic_string_view<char>, boost::system::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:28: multiple definition of `boost::json::parse(boost::core::basic_string_view<char>, boost::system::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:28: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::reset(boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:53: multiple definition of `boost::json::parser::reset(boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:53: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::release()':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:147: multiple definition of `boost::json::parser::release()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:147: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(boost::core::basic_string_view<char>, std::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:45: multiple definition of `boost::json::parse(boost::core::basic_string_view<char>, std::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:45: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(boost::core::basic_string_view<char>, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:57: multiple definition of `boost::json::parse(boost::core::basic_string_view<char>, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:57: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::throw_system_error(boost::system::error_code const&, boost::source_location const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:65: multiple definition of `boost::json::detail::throw_system_error(boost::system::error_code const&, boost::source_location const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/except.ipp:65: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(std::istream&, boost::system::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:73: multiple definition of `boost::json::parse(std::istream&, boost::system::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:73: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::reset(boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:53: multiple definition of `boost::json::stream_parser::reset(boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:53: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::finish(boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:145: multiple definition of `boost::json::stream_parser::finish(boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:145: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write(char const*, unsigned long, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:103: multiple definition of `boost::json::stream_parser::write(char const*, unsigned long, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:103: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::release()':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:172: multiple definition of `boost::json::stream_parser::release()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:172: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(std::istream&, std::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:112: multiple definition of `boost::json::parse(std::istream&, std::error_code&, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:112: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parse(std::istream&, boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:124: multiple definition of `boost::json::parse(std::istream&, boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parse.ipp:124: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:22: multiple definition of `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:22: multiple definition of `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:37: multiple definition of `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:37: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:37: multiple definition of `boost::json::parser::parser(boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:37: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::reset(boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:325: multiple definition of `boost::json::value_stack::reset(boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:325: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write_some(char const*, unsigned long, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:64: multiple definition of `boost::json::parser::write_some(char const*, unsigned long, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:64: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write_some(char const*, unsigned long, std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:77: multiple definition of `boost::json::parser::write_some(char const*, unsigned long, std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:77: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write_some(char const*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:89: multiple definition of `boost::json::parser::write_some(char const*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:89: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write(char const*, unsigned long, std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:122: multiple definition of `boost::json::parser::write(char const*, unsigned long, std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:122: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::parser::write(char const*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:134: multiple definition of `boost::json::parser::write(char const*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/parser.ipp:134: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::release()':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:341: multiple definition of `boost::json::value_stack::release()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:341: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::operator==(boost::json::detail::pointer_token::iterator, boost::json::detail::pointer_token::iterator)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:82: multiple definition of `boost::json::detail::operator==(boost::json::detail::pointer_token::iterator, boost::json::detail::pointer_token::iterator)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:82: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::operator!=(boost::json::detail::pointer_token::iterator, boost::json::detail::pointer_token::iterator)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:87: multiple definition of `boost::json::detail::operator!=(boost::json::detail::pointer_token::iterator, boost::json::detail::pointer_token::iterator)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:87: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::pointer_token::begin() const':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:92: multiple definition of `boost::json::detail::pointer_token::begin() const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:92: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::pointer_token::end() const':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:97: multiple definition of `boost::json::detail::pointer_token::end() const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:97: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::operator==(boost::json::detail::pointer_token, boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:102: multiple definition of `boost::json::detail::operator==(boost::json::detail::pointer_token, boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:102: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::is_invalid_zero(char const*, char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:122: multiple definition of `boost::json::detail::is_invalid_zero(char const*, char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:122: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::is_past_the_end_token(char const*, char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:138: multiple definition of `boost::json::detail::is_past_the_end_token(char const*, char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:138: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::parse_number_token(char const*&, char const*, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:153: multiple definition of `boost::json::detail::parse_number_token(char const*&, char const*, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:153: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::get_token(char const*, char const*, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:200: multiple definition of `boost::json::detail::get_token(char const*, char const*, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:200: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::if_contains_token(boost::json::object const&, boost::json::detail::pointer_token)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:236: multiple definition of `boost::json::detail::if_contains_token(boost::json::object const&, boost::json::detail::pointer_token)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:236: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::at_pointer(boost::core::basic_string_view<char>) const &':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:251: multiple definition of `boost::json::value::at_pointer(boost::core::basic_string_view<char>) const &'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:251: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::find_pointer(boost::core::basic_string_view<char>, boost::system::error_code&) const':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:261: multiple definition of `boost::json::value::find_pointer(boost::core::basic_string_view<char>, boost::system::error_code&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:261: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::find_pointer(boost::core::basic_string_view<char>, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:311: multiple definition of `boost::json::value::find_pointer(boost::core::basic_string_view<char>, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:311: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::find_pointer(boost::core::basic_string_view<char>, std::error_code&) const':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:318: multiple definition of `boost::json::value::find_pointer(boost::core::basic_string_view<char>, std::error_code&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:318: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::find_pointer(boost::core::basic_string_view<char>, std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:327: multiple definition of `boost::json::value::find_pointer(boost::core::basic_string_view<char>, std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/pointer.ipp:327: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::read(char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:807: multiple definition of `boost::json::serializer::read(char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:807: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serialize[abi:cxx11](boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:66: multiple definition of `boost::json::serialize[abi:cxx11](boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:66: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::serializer()':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:739: multiple definition of `boost::json::serializer::serializer()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:739: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::reset(boost::json::value const*)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:750: multiple definition of `boost::json::serializer::reset(boost::json::value const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:750: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::~serializer()':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:39: multiple definition of `boost::json::serializer::~serializer()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:39: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serialize[abi:cxx11](boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:77: multiple definition of `boost::json::serialize[abi:cxx11](boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:77: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::reset(boost::json::array const*)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:763: multiple definition of `boost::json::serializer::reset(boost::json::array const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:763: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serialize[abi:cxx11](boost::json::object const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:88: multiple definition of `boost::json::serialize[abi:cxx11](boost::json::object const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:88: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::reset(boost::json::object const*)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:774: multiple definition of `boost::json::serializer::reset(boost::json::object const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:774: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serialize[abi:cxx11](boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:99: multiple definition of `boost::json::serialize[abi:cxx11](boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:99: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::reset(boost::json::string const*)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:785: multiple definition of `boost::json::serializer::reset(boost::json::string const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:785: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serialize[abi:cxx11](boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:111: multiple definition of `boost::json::serialize[abi:cxx11](boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:111: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::reset(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:796: multiple definition of `boost::json::serializer::reset(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:796: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator<<(std::ostream&, boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:126: multiple definition of `boost::json::operator<<(std::ostream&, boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:126: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator<<(std::ostream&, boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:165: multiple definition of `boost::json::operator<<(std::ostream&, boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:165: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator<<(std::ostream&, boost::json::object const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:176: multiple definition of `boost::json::operator<<(std::ostream&, boost::json::object const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:176: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator<<(std::ostream&, boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:187: multiple definition of `boost::json::operator<<(std::ostream&, boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serialize.ipp:187: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::~serializer()':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:39: multiple definition of `boost::json::serializer::~serializer()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:39: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::serializer::serializer()':
+/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:739: multiple definition of `boost::json::serializer::serializer()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/serializer.ipp:739: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::~static_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: multiple definition of `boost::json::static_resource::~static_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::~static_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: multiple definition of `boost::json::static_resource::~static_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::~static_resource()':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: multiple definition of `boost::json::static_resource::~static_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:20: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::static_resource(unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:23: multiple definition of `boost::json::static_resource::static_resource(unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:23: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::static_resource(unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:23: multiple definition of `boost::json::static_resource::static_resource(unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:23: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::release()':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:36: multiple definition of `boost::json::static_resource::release()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:36: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::do_allocate(unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:47: multiple definition of `boost::json::static_resource::do_allocate(unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:47: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::do_deallocate(void*, unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:64: multiple definition of `boost::json::static_resource::do_deallocate(void*, unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:64: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::static_resource::do_is_equal(boost::container::pmr::memory_resource const&) const':
+/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:72: multiple definition of `boost::json::static_resource::do_is_equal(boost::container::pmr::memory_resource const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/static_resource.ipp:72: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:22: multiple definition of `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:22: multiple definition of `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:37: multiple definition of `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:37: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:37: multiple definition of `boost::json::stream_parser::stream_parser(boost::json::storage_ptr, boost::json::parse_options const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:37: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write_some(char const*, unsigned long, boost::system::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:64: multiple definition of `boost::json::stream_parser::write_some(char const*, unsigned long, boost::system::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:64: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write_some(char const*, unsigned long, std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:75: multiple definition of `boost::json::stream_parser::write_some(char const*, unsigned long, std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:75: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write_some(char const*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:87: multiple definition of `boost::json::stream_parser::write_some(char const*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:87: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write(char const*, unsigned long, std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:120: multiple definition of `boost::json::stream_parser::write(char const*, unsigned long, std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:120: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::write(char const*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:132: multiple definition of `boost::json::stream_parser::write(char const*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:132: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::finish()':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:152: multiple definition of `boost::json::stream_parser::finish()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:152: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::stream_parser::finish(std::error_code&)':
+/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:163: multiple definition of `boost::json::stream_parser::finish(std::error_code&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/stream_parser.ipp:163: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(unsigned long, char, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:29: multiple definition of `boost::json::string::string(unsigned long, char, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:29: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::assign(unsigned long, char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:133: multiple definition of `boost::json::string::assign(unsigned long, char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:133: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(unsigned long, char, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:29: multiple definition of `boost::json::string::string(unsigned long, char, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:29: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(char const*, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:39: multiple definition of `boost::json::string::string(char const*, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:39: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::assign(char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:188: multiple definition of `boost::json::string::assign(char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:188: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(char const*, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:48: multiple definition of `boost::json::string::string(char const*, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:48: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(char const*, unsigned long, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:48: multiple definition of `boost::json::string::string(char const*, unsigned long, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:48: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:58: multiple definition of `boost::json::string::string(boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:58: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::assign(boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:145: multiple definition of `boost::json::string::assign(boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:145: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:58: multiple definition of `boost::json::string::string(boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:58: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:65: multiple definition of `boost::json::string::string(boost::json::string const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:65: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::json::string&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:74: multiple definition of `boost::json::string::string(boost::json::string&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::assign(boost::json::string&&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:156: multiple definition of `boost::json::string::assign(boost::json::string&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:156: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::string(boost::core::basic_string_view<char>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:83: multiple definition of `boost::json::string::string(boost::core::basic_string_view<char>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:83: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::operator=(boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:101: multiple definition of `boost::json::string::operator=(boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:101: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::operator=(boost::json::string&&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:108: multiple definition of `boost::json::string::operator=(boost::json::string&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:108: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::operator=(char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:115: multiple definition of `boost::json::string::operator=(char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:115: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::operator=(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:122: multiple definition of `boost::json::string::operator=(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:122: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::assign(unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:140: multiple definition of `boost::json::detail::string_impl::assign(unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:140: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::shrink_to_fit()':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:202: multiple definition of `boost::json::string::shrink_to_fit()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:202: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::shrink_to_fit(boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:427: multiple definition of `boost::json::detail::string_impl::shrink_to_fit(boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:427: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::clear()':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:215: multiple definition of `boost::json::string::clear()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:215: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::push_back(char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:224: multiple definition of `boost::json::string::push_back(char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:224: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::append(unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:158: multiple definition of `boost::json::detail::string_impl::append(unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:158: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::pop_back()':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:231: multiple definition of `boost::json::string::pop_back()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:231: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::append(unsigned long, char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:241: multiple definition of `boost::json::string::append(unsigned long, char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:241: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::append(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:251: multiple definition of `boost::json::string::append(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:251: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::insert(unsigned long, boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:265: multiple definition of `boost::json::string::insert(unsigned long, boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:265: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::insert(unsigned long, char const*, unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:185: multiple definition of `boost::json::detail::string_impl::insert(unsigned long, char const*, unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:185: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::insert(unsigned long, unsigned long, char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:276: multiple definition of `boost::json::string::insert(unsigned long, unsigned long, char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:276: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::insert_unchecked(unsigned long, unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:248: multiple definition of `boost::json::detail::string_impl::insert_unchecked(unsigned long, unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:248: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::replace(unsigned long, unsigned long, boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:291: multiple definition of `boost::json::string::replace(unsigned long, unsigned long, boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:291: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::replace(unsigned long, unsigned long, char const*, unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:293: multiple definition of `boost::json::detail::string_impl::replace(unsigned long, unsigned long, char const*, unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:293: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::replace(unsigned long, unsigned long, unsigned long, char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:303: multiple definition of `boost::json::string::replace(unsigned long, unsigned long, unsigned long, char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:303: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::replace_unchecked(unsigned long, unsigned long, unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:378: multiple definition of `boost::json::detail::string_impl::replace_unchecked(unsigned long, unsigned long, unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:378: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::erase(unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:317: multiple definition of `boost::json::string::erase(unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:317: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::erase(char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:335: multiple definition of `boost::json::string::erase(char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:335: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::erase(char const*, char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:345: multiple definition of `boost::json::string::erase(char const*, char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:345: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::resize(unsigned long, char)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:357: multiple definition of `boost::json::string::resize(unsigned long, char)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:357: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::string::swap(boost::json::string&)':
+/usr/local/boost_1_81_0/boost/json/impl/string.ipp:377: multiple definition of `boost::json::string::swap(boost::json::string&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/string.ipp:377: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::growth(unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:121: multiple definition of `boost::json::detail::string_impl::growth(unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:121: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:43: multiple definition of `boost::json::detail::string_impl::string_impl(unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:43: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::~value()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:24: multiple definition of `boost::json::value::~value()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:24: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:51: multiple definition of `boost::json::value::value(boost::json::value const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:51: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:107: multiple definition of `boost::json::value::value(boost::json::value&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:107: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:107: multiple definition of `boost::json::value::value(boost::json::value&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:107: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:114: multiple definition of `boost::json::value::value(boost::json::value&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:114: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(boost::json::value&&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:114: multiple definition of `boost::json::value::value(boost::json::value&&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:114: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:172: multiple definition of `boost::json::value::value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:172: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::make_object(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:129: multiple definition of `boost::json::value_ref::make_object(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:129: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::make_array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:146: multiple definition of `boost::json::value_ref::make_array(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:146: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:172: multiple definition of `boost::json::value::value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:172: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::value const&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:196: multiple definition of `boost::json::value::operator=(boost::json::value const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:196: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::swap(boost::json::value&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:318: multiple definition of `boost::json::value::swap(boost::json::value&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:318: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::value&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:205: multiple definition of `boost::json::value::operator=(boost::json::value&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:205: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(std::initializer_list<boost::json::value_ref>)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:215: multiple definition of `boost::json::value::operator=(std::initializer_list<boost::json::value_ref>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:215: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:224: multiple definition of `boost::json::value::operator=(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:224: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(char const*)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:232: multiple definition of `boost::json::value::operator=(char const*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:232: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::string const&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:240: multiple definition of `boost::json::value::operator=(boost::json::string const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:240: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::string&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:248: multiple definition of `boost::json::value::operator=(boost::json::string&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:248: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::array const&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:257: multiple definition of `boost::json::value::operator=(boost::json::array const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:257: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::array&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:265: multiple definition of `boost::json::value::operator=(boost::json::array&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:265: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::object const&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:274: multiple definition of `boost::json::value::operator=(boost::json::object const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:274: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::operator=(boost::json::object&&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:282: multiple definition of `boost::json::value::operator=(boost::json::object&&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:282: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::emplace_string()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:297: multiple definition of `boost::json::value::emplace_string()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:297: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::destroy()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:450: multiple definition of `boost::json::value::destroy()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:450: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::emplace_array()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:304: multiple definition of `boost::json::value::emplace_array()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:304: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value::emplace_object()':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:311: multiple definition of `boost::json::value::emplace_object()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:311: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::operator>>(std::istream&, boost::json::value&)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:352: multiple definition of `boost::json::operator>>(std::istream&, boost::json::value&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:352: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::key_value_pair::key_value_pair(boost::json::key_value_pair const&, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value.ipp:572: multiple definition of `boost::json::key_value_pair::key_value_pair(boost::json::key_value_pair const&, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value.ipp:572: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::~value_stack()':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:302: multiple definition of `boost::json::value_stack::~value_stack()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:302: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::value_stack(boost::json::storage_ptr, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:310: multiple definition of `boost::json::value_stack::value_stack(boost::json::storage_ptr, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:310: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::value_stack(boost::json::storage_ptr, unsigned char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:310: multiple definition of `boost::json::value_stack::value_stack(boost::json::storage_ptr, unsigned char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:310: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_array(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:358: multiple definition of `boost::json::value_stack::push_array(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:358: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_object(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:370: multiple definition of `boost::json::value_stack::push_object(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:370: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_chars(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:383: multiple definition of `boost::json::value_stack::push_chars(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:383: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_key(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:391: multiple definition of `boost::json::value_stack::push_key(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:391: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_string(boost::core::basic_string_view<char>)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:405: multiple definition of `boost::json::value_stack::push_string(boost::core::basic_string_view<char>)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:405: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_int64(long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:435: multiple definition of `boost::json::value_stack::push_int64(long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:435: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_uint64(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:443: multiple definition of `boost::json::value_stack::push_uint64(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:443: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_double(double)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:451: multiple definition of `boost::json::value_stack::push_double(double)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:451: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_bool(bool)':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:459: multiple definition of `boost::json::value_stack::push_bool(bool)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:459: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_stack::push_null()':
+/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:466: multiple definition of `boost::json::value_stack::push_null()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_stack.ipp:466: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::operator boost::json::value() const':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:22: multiple definition of `boost::json::value_ref::operator boost::json::value() const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::from_init_list(void const*, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:31: multiple definition of `boost::json::value_ref::from_init_list(void const*, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:31: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::value_ref::make_value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)':
+/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:116: multiple definition of `boost::json::value_ref::make_value(std::initializer_list<boost::json::value_ref>, boost::json::storage_ptr)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/value_ref.ipp:116: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::shared_resource::shared_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:22: multiple definition of `boost::json::detail::shared_resource::shared_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::shared_resource::shared_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:22: multiple definition of `boost::json::detail::shared_resource::shared_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:22: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::shared_resource::~shared_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: multiple definition of `boost::json::detail::shared_resource::~shared_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::shared_resource::~shared_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: multiple definition of `boost::json::detail::shared_resource::~shared_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::shared_resource::~shared_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: multiple definition of `boost::json::detail::shared_resource::~shared_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/shared_resource.ipp:27: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::~default_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: multiple definition of `boost::json::detail::default_resource::~default_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::~default_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: multiple definition of `boost::json::detail::default_resource::~default_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::~default_resource()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: multiple definition of `boost::json::detail::default_resource::~default_resource()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:33: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::do_allocate(unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:41: multiple definition of `boost::json::detail::default_resource::do_allocate(unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:41: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::do_deallocate(void*, unsigned long, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:51: multiple definition of `boost::json::detail::default_resource::do_deallocate(void*, unsigned long, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:51: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::default_resource::do_is_equal(boost::container::pmr::memory_resource const&) const':
+/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:59: multiple definition of `boost::json::detail::default_resource::do_is_equal(boost::container::pmr::memory_resource const&) const'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/default_resource.ipp:59: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::format_uint64(char*, unsigned long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:62: multiple definition of `boost::json::detail::format_uint64(char*, unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:62: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::format_int64(char*, long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:102: multiple definition of `boost::json::detail::format_int64(char*, long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:102: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::format_double(char*, double)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:115: multiple definition of `boost::json::detail::format_double(char*, double)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/format.ipp:115: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::ryu::d2s_buffered_n(double, char*)':
+/usr/local/boost_1_81_0/boost/json/detail/ryu/impl/d2s.ipp:674: multiple definition of `boost::json::detail::ryu::d2s_buffered_n(double, char*)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/ryu/impl/d2s.ipp:674: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::stack::~stack()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:18: multiple definition of `boost::json::detail::stack::~stack()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:18: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::stack::reserve(unsigned long)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:29: multiple definition of `boost::json::detail::stack::reserve(unsigned long)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/stack.ipp:29: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl()':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:33: multiple definition of `boost::json::detail::string_impl::string_impl()'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:33: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(unsigned long, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:43: multiple definition of `boost::json::detail::string_impl::string_impl(unsigned long, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:43: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:74: multiple definition of `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:74: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:94: multiple definition of `boost::json::detail::string_impl::string_impl(boost::json::detail::key_t, boost::core::basic_string_view<char>, boost::core::basic_string_view<char>, boost::json::storage_ptr const&)'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/detail/impl/string_impl.ipp:94: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: multiple definition of `__odr_asan._ZN5boost4json6detail16default_resource9instance_E'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: multiple definition of `__odr_asan._ZN5boost4json14key_value_pair6empty_E'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: multiple definition of `__odr_asan._ZN5boost4json6object6empty_E'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `boost::json::array::table::deallocate(boost::json::array::table*, boost::json::storage_ptr const&)':
+/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: multiple definition of `__odr_asan._ZN5boost4json5array6empty_E'
+CMakeFiles/OutwardFacingHTTPServer.dir/HTTPServer.cpp.o:/usr/local/boost_1_81_0/boost/json/impl/array.ipp:66: first defined here
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::evp_pkey_handle::evp_pkey_handle(evp_pkey_st*)':
+main.cpp:(.text._ZN3jwt6helper15evp_pkey_handleC2EP11evp_pkey_st[_ZN3jwt6helper15evp_pkey_handleC5EP11evp_pkey_st]+0xb9): undefined reference to `EVP_PKEY_free'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::make_mem_buf_bio()':
+main.cpp:(.text._ZN3jwt6helper16make_mem_buf_bioEv[_ZN3jwt6helper16make_mem_buf_bioEv]+0x94): undefined reference to `BIO_free_all'
+main.cpp:(.text._ZN3jwt6helper16make_mem_buf_bioEv[_ZN3jwt6helper16make_mem_buf_bioEv]+0xbd): undefined reference to `BIO_s_mem'
+main.cpp:(.text._ZN3jwt6helper16make_mem_buf_bioEv[_ZN3jwt6helper16make_mem_buf_bioEv]+0xc5): undefined reference to `BIO_new'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::make_mem_buf_bio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+main.cpp:(.text._ZN3jwt6helper16make_mem_buf_bioERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN3jwt6helper16make_mem_buf_bioERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x9a): undefined reference to `BIO_free_all'
+main.cpp:(.text._ZN3jwt6helper16make_mem_buf_bioERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN3jwt6helper16make_mem_buf_bioERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x12a): undefined reference to `BIO_new_mem_buf'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::make_evp_md_ctx()':
+main.cpp:(.text._ZN3jwt6helper15make_evp_md_ctxEv[_ZN3jwt6helper15make_evp_md_ctxEv]+0x94): undefined reference to `EVP_MD_CTX_destroy'
+main.cpp:(.text._ZN3jwt6helper15make_evp_md_ctxEv[_ZN3jwt6helper15make_evp_md_ctxEv]+0xbd): undefined reference to `EVP_MD_CTX_create'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::extract_pubkey_from_cert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::error_code&)':
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x23e): undefined reference to `X509_free'
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x2c1): undefined reference to `PEM_read_bio_X509'
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x3a4): undefined reference to `EVP_PKEY_free'
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x3df): undefined reference to `X509_get_pubkey'
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x492): undefined reference to `PEM_write_bio_PUBKEY'
+main.cpp:(.text._ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper24extract_pubkey_from_certERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x557): undefined reference to `BIO_ctrl'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::load_public_key_from_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::error_code&)':
+main.cpp:(.text._ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x564): undefined reference to `BIO_write'
+main.cpp:(.text._ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x78d): undefined reference to `BIO_write'
+main.cpp:(.text._ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper27load_public_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x944): undefined reference to `PEM_read_bio_PUBKEY'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::helper::load_private_key_from_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::error_code&)':
+main.cpp:(.text._ZN3jwt6helper28load_private_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper28load_private_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x2ac): undefined reference to `BIO_write'
+main.cpp:(.text._ZN3jwt6helper28load_private_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code[_ZN3jwt6helper28load_private_key_from_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_RSt10error_code]+0x44b): undefined reference to `PEM_read_bio_PrivateKey'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::algorithm::rsa::sign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::error_code&) const':
+main.cpp:(.text._ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code[_ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code]+0x214): undefined reference to `EVP_DigestInit'
+main.cpp:(.text._ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code[_ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code]+0x30a): undefined reference to `EVP_PKEY_size'
+main.cpp:(.text._ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code[_ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code]+0x419): undefined reference to `EVP_DigestUpdate'
+main.cpp:(.text._ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code[_ZNK3jwt9algorithm3rsa4signERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERSt10error_code]+0x52e): undefined reference to `EVP_SignFinal'
+CMakeFiles/OutwardFacingHTTPServer.dir/main.cpp.o: In function `jwt::algorithm::rs256::rs256(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+main.cpp:(.text._ZN3jwt9algorithm5rs256C2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_S9_S9_[_ZN3jwt9algorithm5rs256C5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_S9_S9_]+0x141): undefined reference to `EVP_sha256'
+collect2: error: ld returned 1 exit status
+CMakeFiles/OutwardFacingHTTPServer.dir/build.make:113: recipe for target 'OutwardFacingHTTPServer' failed
+make[2]: *** [OutwardFacingHTTPServer] Error 1
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/OutwardFacingHTTPServer.dir/all' failed
+make[1]: *** [CMakeFiles/OutwardFacingHTTPServer.dir/all] Error 2
+Makefile:135: recipe for target 'all' failed
+make: *** [all] Error 2
