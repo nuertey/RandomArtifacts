@@ -32,14 +32,15 @@ MESSAGE_SIZE_IN_BYTES = 20
 ACK_STRING = 'Alive!'
 
 # Note the exclusion of the index at the end of the range:
-botasc_indices = list(range(1, 501))
+#botasc_indices = list(range(1, 501))
+botasc_indices = list(range(1, 3))
 
 def connect_to_mainasc(botasc_index):
     # TBD Nuertey Odzeyem; placeholder for debug.
     #
     #socket_descriptor = botasc_index
     socket_descriptor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socket_descriptor.connect(MAIN_ASC_IP_ADDRESS, MAIN_ASC_PORT_NUMBER)
+    socket_descriptor.connect((MAIN_ASC_IP_ADDRESS, MAIN_ASC_PORT_NUMBER))
 
     # Usually, in Python, if one returns a dictionary, it is faster. In 
     # our case though, such nuances do not apply, but still the return 
