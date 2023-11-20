@@ -1,0 +1,133 @@
+# Sequence Diagram Title
+#![Nuertey-Dragonfly-Cellular-LightControl UML Sequence Diagram - main branch (i.e. Asynchronous Design Version)]
+
+# Actors and Objects Existing in this Sequence Diagram
+main:Actor "main"
+/g_pSharedEventQueue:EventQueue
+g_UserLED:DigitalOut "g_UserLED(LED1)"
+g_UserLEDState:bool "g_UserLEDState"
+/g_pLEDLightControlManager:LEDLightControl
+/m_pNetworkInterface:NetworkInterface
+/m_pTheCellularDevice:CellularDevice
+/m_pTheSocket:TCPSocket
+/m_TheSocketAddress:SocketAddress
+scheduler:Scheduler[pe]
+
+# Messages section
++1 g_UserLED
+  // Per both potential MCU specs,
+  // common LED 'in situ' on the MCU:
+  //        
+  // Target = MTS_DRAGONFLY_L471QG: 
+  // UNO pin D3 (i.e. STM32 pin PA_0).  
+  //
+  // Target = NUCLEO_F767ZI: Green LED
++1
+(3)main:g_UserLEDState.{false}
++3 main
+  // Logically, the board will 
+  // bootup with the LED off.
++3
+main:g_pSharedEventQueue.new
+main:g_pLEDLightControlManager.new
+g_pLEDLightControlManager:m_pNetworkInterface.new 
+g_pLEDLightControlManager:m_pTheCellularDevice.new
+g_pLEDLightControlManager:m_TheSocketAddress.new
+g_pLEDLightControlManager:.m_EchoServerDomainName(ECHO_HOSTNAME)
+g_pLEDLightControlManager:.m_EchoServerAddress(std::nullopt)
+g_pLEDLightControlManager:.m_EchoServerPort(ECHO_PORT)
+
+[c:alt if (g_MCUTarget == MCUTarget_t::NUCLEO_F767ZI)]
+  (4)main:g_pLEDLightControlManager.Setup[TransportScheme_t::ETHERNET, TransportSocket_t::TCP]()
+  [c:alt if constexpr (transport == TransportScheme_t::ETHERNET)]
+    g_pLEDLightControlManager:m_pNetworkInterface.get_default_instance()
+    g_pLEDLightControlManager:.MBED_ASSERT(m_pNetworkInterface)
+    (5)g_pLEDLightControlManager:m_pNetworkInterface.attach(callback(NetworkStatusCallback))
+    +5 m_pNetworkInterface
+      // Asynchronously monitor 
+      // for Network Status events.
+    +5
+    g_pLEDLightControlManager:.ConnectToNetworkInterface[transport, socket]()
+    [c:method void LEDLightControl::ConnectToNetworkInterface()]]
+      (6)g_pLEDLightControlManager:.m_TheTransportSchemeType = transport
+      (6)g_pLEDLightControlManager:.m_TheTransportSocketType = socket 
+      +6 g_pLEDLightControlManager
+        // At this juncture, save and 
+        // encapsulate template parameter
+        // variables within the class itself
+        // for later ::NetworkStatusCallbacks()
+        // to operate on. 
+      +6
+      g_pLEDLightControlManager:m_pNetworkInterface.set_blocking(false)
+      g_pLEDLightControlManager:ignoredReturnValue=m_pNetworkInterface.connect()
+      g_pLEDLightControlManager:.MBED_ASSERT(g_pSharedEventQueue)
+      g_pLEDLightControlManager:g_pSharedEventQueue.dispatch_forever()
+    [/c]
+    (7)scheduler:g_pSharedEventQueue.call(g_pLEDLightControlManager, &LEDLightControl::ConnectToSocket)
+    +7 g_pSharedEventQueue
+      // Global IP address is established.
+    +7
+    g_pSharedEventQueue:g_pLEDLightControlManager.ConnectToSocket()
+    [c:method void LEDLightControl::ConnectToSocket()]]
+      (2)g_pLEDLightControlManager:auto [ip, netmask, gateway, mac]=m_pNetworkInterface.Utilities::GetNetworkInterfaceProfile
+      +2 g_pLEDLightControlManager
+        // On return, printf:
+        //
+        // ip, netmask, gateway, mac
+      +2
+      [c:cond if (m_TheTransportSocketType == TransportSocket_t::TCP)]
+        g_pLEDLightControlManager:m_pTheSocket.new
+        g_pLEDLightControlManager:nsapi_error_t rc=m_pTheSocket.open(m_pNetworkInterface)
+        g_pLEDLightControlManager:m_pTheSocket.set_blocking(true)
+        g_pLEDLightControlManager:m_pTheSocket.set_timeout(BLOCKING_SOCKET_TIMEOUT_MILLISECONDS)
+        g_pLEDLightControlManager:nsapi_error_t retVal=m_pNetworkInterface.gethostbyname(address.c_str(), pTheSocketAddress)
+        g_pLEDLightControlManager:optional[string] ipAddress=m_TheSocketAddress.get_ip_address()
+        g_pLEDLightControlManager:.swap(m_EchoServerAddress, ipAddress)
+        g_pLEDLightControlManager:m_TheSocketAddress.set_port(m_EchoServerPort)
+        g_pLEDLightControlManager:NSAPI_ERROR_OK=m_pTheSocket.connect(m_TheSocketAddress)
+        g_pLEDLightControlManager:.Run()
+        [c:method void LEDLightControl::Run()]
+          [c:cond while (g_IsConnected)]
+            g_pLEDLightControlManager:bool=g_pLEDLightControlManager.Send()
+            [c:method bool LEDLightControl::Send()]
+              g_pLEDLightControlManager:g_UserLEDState.{false ? true : false}
+              g_pLEDLightControlManager:lengthWritten=g_pLEDLightControlManager.snprintf(rawBuffer, sizeof(rawBuffer),\\n            "t:lights;g:%03d;s:%s;", \\n             MY_LIGHT_CONTROL_GROUP,\\n            (g_UserLEDState ? "1" : "0")) + 1;
+              g_pLEDLightControlManager:NSAPI_ERROR_OK=m_pTheSocket.send(rawBuffer, lengthWritten)
+            [/c]
+            g_pLEDLightControlManager:bool=g_pLEDLightControlManager.Receive()
+            [c:method bool LEDLightControl::Receive()]
+              g_pLEDLightControlManager:NSAPI_ERROR_OK=m_pTheSocket.recv(receiveBuffer, sizeof(receiveBuffer) - 1)
+              g_pLEDLightControlManager:true=g_pLEDLightControlManager.ParseAndConsumeLightControlMessage(s, delimiter)
+              [c:method bool LEDLightControl::ParseAndConsumeLightControlMessage(std::string& s, const std::string& delimiter)]
+                [c:alt if (!token.compare("s:0"))]
+                  (8)g_pLEDLightControlManager:g_UserLED.LED_OFF
+                  +8 g_UserLED
+                    // Successfully parsed LightControl
+                    // message. Turning LED OFF ...
+                  +8
+                --[else if (!token.compare("s:1"))]
+                  (9)g_pLEDLightControlManager:g_UserLED.LED_ON
+                  +9 g_UserLED
+                    // Successfully parsed LightControl
+                    // message. Turning LED ON ...
+                  +9 
+                [/c]
+              [/c]
+            [/c]
+          [/c]
+        [/c]
+      [/c]
+    [/c]
+  [/c]
+[/c]
++4 main
+  // This call will never return as it 
+  // encapsulates an EventQueue's 
+  // dispatch_forever() method. And as
+  // it constitutes a template method,
+  // it is invoked as such:
+  //
+  g_pLEDLightControlManager->Setup
+    [TransportScheme_t::ETHERNET, 
+    TransportSocket_t::TCP]();
++4
